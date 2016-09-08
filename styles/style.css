@@ -1,3 +1,4 @@
+
 /* -------------------------------
  general style 
  ---------------------------------*/
@@ -151,13 +152,13 @@ index page
 	margin-left: -480px;
 }
 */
-.fixed_header h1 {
+/*.fixed_header h1 {
 	font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;
 	text-transform: none;
 	text-align: center;
 	font-size: 2.3em;
 }
-
+*/
 #content {
 	margin: 2% 5%;
 }
@@ -168,7 +169,7 @@ figure {
 
 
 figure img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -197,7 +198,7 @@ article ul li {
 .project_data p {
 	font-style: italic;
 	margin: 0;
-	line-height: 1.4;
+	line-height: 1.4em;
 }
 
 .requirements p{
@@ -293,9 +294,13 @@ single project page
 
 .flex_container img {
 	width: 100%;
-	width: 600px;
+	/*width: 600px;*/
 	height: auto;
-	display: block;
+}
+
+.flex_container div {
+	/*width: 600px;*/
+	margin: 3%;
 }
 
 
@@ -366,42 +371,10 @@ index page
 	margin: 0 auto;
 }
 
-/*aside {
-	position: relative;
-}*/
-
-.fixed_header {
-	position: fixed;
-	width: 30%;
-}
-
-.fixed_header h1 {
-	font-size: 5em;
-	margin: 0;
-	text-align: left;
-}
-
-/*.projects_section {
-	width: 40%;
-	margin-right: 15%;
-}*/
-
-.project {
+.project_intro {
 	display: flex;
-	justify-content: space-around;
+	/*justify-content: space-around;*/
 }
-
-
-.wrapper {
-	display: flex;
-	justify-content: flex-end;
-
-}
-
-/*.project {
-	height: 400px;
-}*/
-
 
 
 article {
@@ -412,6 +385,8 @@ article {
 	border: 1px solid black;
 }
 */
+
+
 
 /* -----------------------------
 about page 
@@ -452,19 +427,19 @@ about page
 single project page 
 ------------------------------ */
 
-.intro {
+/*.intro {
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
 	width: 100%;
-}
+}*/
 
-.intro div:first-child {
+/*.intro div:first-child {
 	width: 600px;
 	height: auto;
-}
+}*/
 
-.requirements {
+/*.requirements {
 	margin-left: 5%;
 }
 
@@ -472,13 +447,18 @@ single project page
 	margin: 10% auto 0;
 	width: 60%;
 }
-
+*/
 .flex_container {
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
-	width: 80%;
 }
+
+.flex_container div {
+	width: 600px;
+	margin: 1%;
+}
+
 
 }
 
