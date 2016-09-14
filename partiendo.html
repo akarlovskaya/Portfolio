@@ -7,14 +7,19 @@
     <meta name="description" content="Web Designer in Vancouver, Canada">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat|Work+Sans:400,500" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+<!--     <link href="scripts/lity-2.0.0/assets/prism.css" media="all" rel="stylesheet" type="text/css">
+    <link href="scripts/lity-2.0.0/dist/lity.css" rel="stylesheet"> -->
+    <link type="text/css" rel="stylesheet" href="scripts/lightGallery-master/dist/css/lightgallery.css" /> 
+
     
 </head>
 <body >
 
 <header id="top">
         <div class="inner-nav">
-            <!-- <h1><a class="myName" href="index.html">Anna Karlovskaya</a></h1> -->
+            <h1><a class="myName" href="index.html">Anna Karlovskaya</a></h1>
             <nav>
                     <ul>
                         <li><a href="index.html">Works</a></li>
@@ -30,31 +35,87 @@
     <div class="wrapper_project">
 
         <!-- <div class="intro"> -->
-             <div class="requirements">
-                <h2>Requirements:</h2>
-                <p>Create a two or more page web site for a fictional business.</p>
-                <p>The web site must contain a custom font using a font hosting service or &commat;font-face.</p>
-            </div>
+<!--              <div class="requirements">
+                <h2>Requirements</h2>
+                <ul>
+                    <li>Create a two or more page web site for a fictional business</li>
+                    <li>The web site must contain a custom font using a font hosting service or &commat;font-face</li>
+                </ul>
+            </div> -->
         <!-- </div> -->
 
     <div class="project">
-            <article>
+        <h2>The Story</h2>
+            <article class="text">
                 <p><strong>&ldquo;Partiendo&rdquo;</strong> &mdash; a small agency located in Vancouver with only four employees.</p>
-                <p>My intention was to create not very formal design showing their flexibility and modern approach in searching and selection of personnel. At the same time they are experts with extensive experience in their specific fields, knowing how to meet client and candidate needs.</p>
+                <p>My intention was to create not very formal design showing their flexibility and modern approach in searching and selection of personnel. At the same time they are experts with extensive experience in their specific fields, knowing how to meet client and candidate needs and I wanted that design supports this as well.</p>
+            </article>    
 
-                <div class="flex_container">
-                    <div><img src="images/style_tile1.png" alt="Version One of Style Tile"></div>
-                    <div><img src="images/style_tile2.png" alt="Version One of Style Tile"></div>
+            <article class="text">
+            <h2>Wireframing</h2>
+
+                <p>I chose to focus on three pages &mdash; <strong>Home</strong>, <strong>Job Seeker</strong> and <strong>About</strong>. To organize content and layout for the website I created wireframes in Balsamiq. There are few moments which I want to describe.</p>
+                <p>Using action buttons on <strong>Home page</strong> serves to split the audience on two  primary groups - employers and candidates. </p>
+                <p> On <strong>Job Seeker page</strong>  I wanted to focus users attention on searching section and option to send CV to the agency's database. Also I added few articles about agency's services for candidates to catch their attention to them. </p>
+                <p><strong>About page</strong> structure is pretty straightforward - about company section with story and expertise information, list of main clients and information about recruiters with their socials links.</p>
+
+                <div id="lightgallery">
+                  <a href="images/home.png">
+                      <img src="images/home.png" alt="Home Page Wireframe"/>
+                  </a>
+                  <a href="images/jobSeeker.png">
+                      <img src="images/jobSeeker.png" alt="Job Seeker Page Wireframe"/>
+                  </a>
+                  <a href="images/about.png">
+                      <img src="images/about.png" alt="About Page Wireframe"/>
+                  </a>
+                                    <a href="images/style_tile1.png">
+                      <img src="images/style_tile1.png" alt="Version One of Style Tile"/>
+                  </a>
+                  <a href="images/style_tile2.png">
+                      <img src="images/style_tile2.png" alt="Version Two of Style Tile"/>
+                  </a>
+                </div>
+<!-- 
+                <ul class="flex_container">
+                    <a href="#" class="lightbox"><img src="images/home.png" alt="Home Page Wireframe" data-lity></a>
+                    <li><a href="#" class="lightbox"><img src="images/jobSeeker.png" alt="Job Seeker Page Wireframe" data-lity></a></li>
+                    <li><a href="#" class="lightbox"><img src="images/about.png" alt="About Page Wireframe" data-lity></a></li>
+                </ul>
+ -->
+                <!-- <div class="flex_container">
+                    <div><img src="images/jobSeeker.png" alt="Job Seeker Page Wireframe" lb-id="a"></div>
+                    <div><img src="images/about.png" alt="About Page Wireframe" lb-id="a"></div>
+                </div> -->
+            </article>
+
+        <article class="text">    
+            <h2>Creating Style and Mood</h2>
+                
+<!--                 <ul class="flex_container">
+                    <li> <a href="#"></a> <img src="images/style_tile1.png" alt="Version One of Style Tile" data-lity></li>
+                    <li> <a href="#"></a> <img src="images/style_tile2.png" alt="Version One of Style Tile" data-lity> </li>
+                </ul> -->
+<!-- 
+                <div id="lightgallery">
+                  <a href="images/style_tile1.png">
+                      <img src="images/style_tile1.png" alt="Version One of Style Tile"/>
+                  </a>
+                  <a href="images/style_tile2.png">
+                      <img src="images/style_tile2.png" alt="Version Two of Style Tile"/>
+                  </a>
+                </div> -->
+
+                <p>I created two versions of styletiles with different color pallets and minor changes for content presentation. As final style I chose the first one - more colorful and with two sans serif fonts &mdash; &ldquo;Quicksand&rdquo; for headings by Andrew Paglinawan and &ldquo;Work Sans&rdquo; for paragraphs by Wei Huang, because I think this combination served my design goals better then other options.</p>
+
+                <div>
+<!--                 <a href=""> Case Study </a>  -->
+                <a href=""> View live </a>
                 </div>
 
-                <p>To achieve this goal I used two sans serif fonts - &ldquo;Quicksand&rdquo; by Andrew Paglinawan and &ldquo;Work Sans&rdquo; by Wei Huang, and light colourful pallet with light blue as primary colour. I think, this combination of sans-serif fonts and light colors ....... </p>
-                <p>To organize content and define visual approach for the website I created wireframes in Balsamiq and two version of stile tiles.</p>
+            </article>
 
-                <div class="flex_container">
-                    <div><img src="images/home.png" alt="Home Page Wireframe"></div>
-                    <div><img src="images/jobSeeker.png" alt="Job Seeker Page Wireframe"></div>
-                    <div><img src="images/about.png" alt="About Page Wireframe"></div>
-                </div>
+
 
 <!--                 <p>Tools:</p>
 
@@ -66,19 +127,14 @@
                     <li>Photoshop</li>
                 </ul> -->
 
-                <div>
-<!--                 <a href=""> Case Study </a>  -->
-                <a href=""> View project </a>
-                </div>
 
-            </article>
             
         </div>
 
 <!--     <div class="project_section">      
             </div> -->
         
-    </div> <!-- end .wrapper -->
+    </div> <!-- end .wrapper_project -->
     
 </main>
 
@@ -88,6 +144,23 @@
     <a href="#top" class="skip-to-top">You have reached bottom. Click this link to get back on top.</a>
 </footer>
    
+<script type="text/javascript" src="scripts/jquery-3.1.0.min.js"></script>
+<script src="scripts/lightGallery-master/dist/js/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="scripts/lightGallery-master/dist/js/lg-thumbnail.min.js"></script>
+    <script src="scripts/lightGallery-master/dist/js/lg-fullscreen.min.js"></script>
+<!-- <script type="text/javascript" src="scripts/imagelightbox.min.js "></script>
+<script type="text/javascript" src="scripts/script.js "></script> -->
+<!-- 
+<script src="scripts/lity-2.0.0/vendor/jquery.js"></script>
+<script src="scripts/lity-2.0.0/dist/lity.js"></script>
+<script src="scripts/lity-2.0.0/assets/prism.js"></script> -->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
+    });
+</script>
 
 
 </body>

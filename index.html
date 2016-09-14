@@ -14,27 +14,31 @@
 
 <header id="top">
         <div class="inner-nav">
-   <!--          <h1><a class="myName" href="index.html">Anna Karlovskaya</a></h1> -->
+            <h1><a class="myName" href="landing.html">Anna Karlovskaya</a></h1>
             <nav>
-                    <ul>
-                        <li><a href="#works">Works</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
+            <div class="skip-to-content">
+                <a href="#content">Skip to content</a>
+            </div>
+                <ul>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
 <main id="content">
 
-    <div class="jumbotron">
-        <h1>Anna Karlovskaya</h1>
-        <h2>Web designer</h2>
+    <div class="intro_hello">
+<!--         <h2>Portfolio</h2>
+        <p>My name is Anna, I&rsquo;m web designer in Vancouver, Canada.</p> -->
+        <h2>My Some Selected Works</h2>
     </div>
 
     <div class="project_intro">
         <figure>
-          <img src="images/partiendo_home_page.png" alt="">
-          <figcaption><p>Partiendo. Business Brochure Website</p></figcaption>
+          <img src="images/partiendo_screen.png" alt="">
+          <figcaption><p>Partiendo. Business Brochure Website<p></figcaption>
         </figure>
 
         <article>
@@ -58,36 +62,68 @@
             </ul>
 
             <div>
-                <a href="partiendo.html" target="_blank"> Read more </a> 
-                <a href=""> View project </a>
+                <a href="partiendo.html" target="_blank"> Read more <span class="screen-reader-text">about working process</span></a> 
+                <a href=""> View live </a>
             </div>
 
         </article>
     </div>
 
     <div class="project_intro">
-
         <figure>
-          <img src="images/wow_radio_home_page.png" alt="">
-          <figcaption>WOW Radio. Responsive Web Page</figcaption>
+          <img src="images/landing_page_devices.png" alt="">
+          <figcaption><p>Landing Page<p></figcaption>
+        </figure>
+
+        <article>
+            <h3>Landing Page</h3>
+
+            <div class="project_data">
+                <p>TWD Program Project</p>
+                <p>Completed: May 2016</p>
+            </div>
+
+            <p>This is my landing page for TWD Program projects.</p>
+            <p>This page was designed for mobile devices first. I used CSS3 Flexbox mode which helps elements behave predictably and media query with one breakpoint at 750px.</p>
+
+            <p>Tools:</p>
+            <ul>
+                <li>HTML5 and CSS3</li>
+                <li>Responsive Design</li>
+                <li>Mobile First</li>
+            </ul>
+
+            <div>
+                <a href=""> View live </a>
+            </div>
+
+        </article>
+    </div>
+
+    <div class="project_intro">
+        <figure>
+          <img src="images/wow.png" alt="">
+          <figcaption><p>WOW Radio. Responsive Web Page<p></figcaption>
         </figure>
 
         <article>
             <h3>WOW Radio</h3>
+
             <div class="project_data">
                 <p>TWD Program Project</p>
                 <p>Completed: July 2016</p>
             </div>
 
-            <div class="requirements">
-            <p>Requirements:<br>
+<!--              <div class="requirements">
+            <p><strong>Requirements:</strong><br>
             Create a single responsive web page with responsive main navigation contains at least three links. 
             Web page should be fully flexible and adaptable to any devices.</p>
-            </div>
+            </div> -->
 
+            <div>
             <p>This is a single responsive web page for a fictional radio station &mdash; <strong>&ldquo;WOW Radio&rdquo;</strong>.</p>
             <p>My preferable way to create responsive content is using the CSS3 Flexible Boxes, or Flexboxes. I find the flexbox model effective and easy to use for complex layouts. For example, I can easily change order or direction of content, horizontally or vertically align items, specify the length of a flex items etc. In my opinion, flexbox concept is a new level of creating responsive website layouts comparing with floats.</p>
-            <p>To ensure that my layout will be adaptable to any current and future devices, I prefer to test it with Chrome DevTools&rsquo; Device Mode using the viewport controls (responsive or device-specific mode).</p>
+             <p>To ensure that my layout will be adaptable to any current and future devices, I prefer to test it with Chrome DevTools&rsquo; Device Mode using the viewport controls (responsive or device-specific mode).</p>
             <p>Tools:</p>
             <ul>
                 <li>HTML5 and CSS3</li>
@@ -95,19 +131,21 @@
                 <li>Logo Design</li>
                 <li>Photoshop</li>
             </ul>
+            </div>
 
             <div>
-                <a href="wow_radio.html" target="_blank"> Read more </a> 
-                <a href=""> View project </a>
+                <!-- <a href="partiendo.html" target="_blank"> Read more <span class="screen-reader-text">about working process</span></a>  -->
+                <a href=""> View live </a>
             </div>
+
         </article>
     </div>
 
     <div class="project_intro">
 
         <figure>
-          <img src="images/newWorldsExplorer_home_page.png" alt="">
-          <figcaption>New Worlds Explorer. Matching Game</figcaption>
+          <img src="images/newWorldsExplorer_screen.png" alt="">
+          <figcaption><p>New Worlds Explorer. Matching Game</p></figcaption>
         </figure>
 
         <article>
@@ -118,12 +156,12 @@
             <p>Completed: June 2016</p>
             </div>
 
-            <div class="requirements">
+<!--             <div class="requirements">
                 <p>Requirements:<br>
                 Create a single player game where the user has to match pairs of hidden pictures.
                 The games should be styled using CSS and images.</p>
             </div>
-
+ -->
             <p>This was Level 01 project for JavaScript and jQuery Course at TWD Program.</p>
             <p>In addition to creating matching game with traditional logic, my aim was to make fun game with animated cartoon graphic and some story. I chose space theme where a user become a scientist in an expedition to remote planets and his goal is to find and collect new species.</p>
             <p>Animated rocket ship in the beginning of the game and animated asteroid and aliens in the end were made by using animate.css library. </p>
@@ -136,9 +174,14 @@
                 <li>Photoshop</li>
             </ul>
 
-            <a href=""> View project </a>
+            <a href=""> View live </a>
 
         </article>
+    </div>
+
+    <div class="contact_me">
+        <p>Let&rsquo;s make good things together! </p>
+        <button><a href="mailto:karlovskaya@gmail.com?Subject=Hello" target="_blank">Contact me</a></button>
     </div>
     
 </main>
@@ -147,6 +190,9 @@
 <footer>
     <small>&copy;2016 Design by Anna Karlovskaya</small>
     <a href="#top" class="skip-to-top">You have reached bottom. Click this link to get back on top.</a>
+    <p id="back-top">
+        <a href="#top"><span></span>Back to Top</a>
+    </p>
 </footer>
    
 
