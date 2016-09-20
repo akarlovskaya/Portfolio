@@ -1,31 +1,95 @@
-// $( function()
-//     {
-//         $( 'a[lb-id="a"]' ).imageLightbox(
-//             {
-//                 selector:       'a[lb-id]', // string;
-//                 // id:             'imagelightbox',         // string;
-//                 allowedTypes:   'png|jpg|jpeg||gif',     // string; * NOT WORKING ATM *
-//                 animationSpeed: 250,                     // integer;
-//                 activity:       false,                   // bool;            show activity indicator
-//                 arrows:         true,                   // bool;            show left/right arrows
-//                 button:         true,                   // bool;            show close button
-//                 caption:        false,                   // bool;            show captions
-//                 enableKeyboard: true,                    // bool;            enable keyboard shortcuts (arrows Left/Right and Esc)
-//                 navigation:     true,                   // bool;            show navigation
-//                 overlay:        true,                   // bool;            display the lightbox as an overlay
-//                 preloadNext:    true,                    // bool;            silently preload the next image
-//                 quitOnEnd:      false,                   // bool;            quit after viewing the last image
-//                 quitOnImgClick: false,                   // bool;            quit when the viewed image is clicked
-//                 quitOnDocClick: true,                    // bool;            quit when anything but the viewed image is clicked
-//                 quitOnEscKey:   true,                    // bool;            quit when Esc key is pressed
-//                 onStart:        false,                   // function/bool;   calls function when the lightbox starts
-//                 onEnd:          false,                   // function/bool;   calls function when the lightbox quits
-//                 onLoadStart:    false,                   // function/bool;   calls function when the image load begins
-//                 onLoadEnd:      false                    // function/bool;   calls function when the image finishes loading
-//             }
+// paralax for intro section
 
-//         );
-//     });
+$(window).scroll(function () {
+
+        // $('.hello').css({
+        //     'top': 50-($(this).scrollTop() / 35) + "%"
+        // });
+
+        $('.origami').css({
+        'top': 55-($(this).scrollTop() / 15) + "%"
+        });
+    });
+
+
+
+
+
+// Wireframe Gallery 
+var openPS1 = function(id) {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+        {
+            src: 'images/home.png',
+            w: 1000,
+            h: 667
+        },
+        {
+            src: 'images/jobSeeker.png',
+            w: 957,
+            h: 1008
+        },
+    {
+            src: 'images/about.png',
+            w: 1000,
+            h: 1046
+        }
+    ];
+
+    // define options (if needed)https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg"
+    var options = {
+             // history & focus options are disabled on CodePen        
+        history: false,
+        focus: false,
+    index: id-1,
+
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+        
+    };
+    
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+};
+
+// StileTiles Gallery 
+var openPS2 = function(id) {
+
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+        {
+            src: 'images/style_tile1.png',
+            w: 1020,
+            h: 750
+        },
+        {
+            src: 'images/style_tile2.png',
+            w: 1020,
+            h: 750
+        },
+    ];
+
+    // define options (if needed)https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg"
+    var options = {
+             // history & focus options are disabled on CodePen        
+        history: false,
+        focus: false,
+        index: id-1,
+
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+        
+    };
+    
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+
+};
+
 
 
 // Back to Top arrow

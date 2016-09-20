@@ -11,7 +11,13 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 <!--     <link href="scripts/lity-2.0.0/assets/prism.css" media="all" rel="stylesheet" type="text/css">
     <link href="scripts/lity-2.0.0/dist/lity.css" rel="stylesheet"> -->
-    <link type="text/css" rel="stylesheet" href="scripts/lightGallery-master/dist/css/lightgallery.css" /> 
+    <!-- <link type="text/css" rel="stylesheet" href="scripts/lightGallery-master/dist/css/lightgallery.css" />  -->
+
+    <!-- PhotoSwipe Gallery CDNs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script> 
 
     
 </head>
@@ -22,7 +28,7 @@
             <h1><a class="myName" href="index.html">Anna Karlovskaya</a></h1>
             <nav>
                     <ul>
-                        <li><a href="index.html">Works</a></li>
+                        <li><a href="works.html">Works</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
             </nav>
@@ -30,10 +36,13 @@
     </header>
 
 <main id="content">
-    <h1>Partiendo</h1>
 
-    <div class="wrapper_project">
-
+            <div class="intro_partiendo">
+             <h1>Partiendo</h1>
+                <p><strong>&ldquo;Partiendo&rdquo;</strong> &mdash; a small agency located in Vancouver with only four employees.</p>
+                <p>My intention was to create not very formal design showing their flexibility and modern approach in searching and selection of personnel. At the same time they are experts with extensive experience in their specific fields, knowing how to meet client and candidate needs and I wanted that design supports this as well.</p>
+            </div> 
+    <div class="wrapper_project">    
         <!-- <div class="intro"> -->
 <!--              <div class="requirements">
                 <h2>Requirements</h2>
@@ -45,37 +54,37 @@
         <!-- </div> -->
 
     <div class="project">
-        <h2>The Story</h2>
-            <article class="text">
-                <p><strong>&ldquo;Partiendo&rdquo;</strong> &mdash; a small agency located in Vancouver with only four employees.</p>
-                <p>My intention was to create not very formal design showing their flexibility and modern approach in searching and selection of personnel. At the same time they are experts with extensive experience in their specific fields, knowing how to meet client and candidate needs and I wanted that design supports this as well.</p>
-            </article>    
 
             <article class="text">
-            <h2>Wireframing</h2>
+                <h2>Wireframing</h2>
 
                 <p>I chose to focus on three pages &mdash; <strong>Home</strong>, <strong>Job Seeker</strong> and <strong>About</strong>. To organize content and layout for the website I created wireframes in Balsamiq. There are few moments which I want to describe.</p>
                 <p>Using action buttons on <strong>Home page</strong> serves to split the audience on two  primary groups - employers and candidates. </p>
                 <p> On <strong>Job Seeker page</strong>  I wanted to focus users attention on searching section and option to send CV to the agency's database. Also I added few articles about agency's services for candidates to catch their attention to them. </p>
                 <p><strong>About page</strong> structure is pretty straightforward - about company section with story and expertise information, list of main clients and information about recruiters with their socials links.</p>
+                <p>CLick on these images to see details.</p>
 
-                <div id="lightgallery">
-                  <a href="images/home.png">
-                      <img src="images/home.png" alt="Home Page Wireframe"/>
-                  </a>
-                  <a href="images/jobSeeker.png">
+                <!-- Gallery -->
+
+
+                <!-- Wireframe Images -->
+
+                <div class="flex_container">
+<!--               <a href="" onclick="openPS1(1)"> <img  src="images/home.png" alt="Home Page Wireframe"/> </a>
+
+                  <a href="" onclick="openPS1(2)">
                       <img src="images/jobSeeker.png" alt="Job Seeker Page Wireframe"/>
                   </a>
-                  <a href="images/about.png">
-                      <img src="images/about.png" alt="About Page Wireframe"/>
-                  </a>
-                                    <a href="images/style_tile1.png">
-                      <img src="images/style_tile1.png" alt="Version One of Style Tile"/>
-                  </a>
-                  <a href="images/style_tile2.png">
-                      <img src="images/style_tile2.png" alt="Version Two of Style Tile"/>
-                  </a>
+                  <a href="" onclick="openPS1(3)">
+                      <img  src="images/about.png" alt="About Page Wireframe"/>
+                  </a> -->
+
+                <div><img onclick="openPS1(1)" src="images/home.png" alt="Home Page Wireframe"/> </div> 
+                <div><img onclick="openPS1(2)"src="images/jobSeeker.png" alt="Job Seeker Page Wireframe"/></div> 
+                <div><img onclick="openPS1(3)" src="images/about.png" alt="About Page Wireframe"/></div> 
                 </div>
+
+
 <!-- 
                 <ul class="flex_container">
                     <a href="#" class="lightbox"><img src="images/home.png" alt="Home Page Wireframe" data-lity></a>
@@ -89,8 +98,8 @@
                 </div> -->
             </article>
 
-        <article class="text">    
-            <h2>Creating Style and Mood</h2>
+            <article class="text">    
+                <h2>Creating Style and Mood</h2>
                 
 <!--                 <ul class="flex_container">
                     <li> <a href="#"></a> <img src="images/style_tile1.png" alt="Version One of Style Tile" data-lity></li>
@@ -107,10 +116,19 @@
                 </div> -->
 
                 <p>I created two versions of styletiles with different color pallets and minor changes for content presentation. As final style I chose the first one - more colorful and with two sans serif fonts &mdash; &ldquo;Quicksand&rdquo; for headings by Andrew Paglinawan and &ldquo;Work Sans&rdquo; for paragraphs by Wei Huang, because I think this combination served my design goals better then other options.</p>
+                <p>CLick on images below to see details.</p>
+
+                <div class="flex_container">
+                    <!-- <a href="images/style_tile1.png"> -->
+                       <div> <img onclick="openPS2(1)" src="images/style_tile1.png" alt="Version One of Style Tile"/></div>
+                    <!-- </a> -->
+                    <!-- <a href="images/style_tile2.png"> -->
+                       <div>  <img onclick="openPS2(2)" src="images/style_tile2.png" alt="Version Two of Style Tile"/></div>
+                    <!-- </a> -->
+                </div>
 
                 <div>
-<!--                 <a href=""> Case Study </a>  -->
-                <a href=""> View live </a>
+                    <a href=""> View live </a>
                 </div>
 
             </article>
@@ -137,31 +155,72 @@
     </div> <!-- end .wrapper_project -->
     
 </main>
+    <!-- Gallery -->
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+    It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <div class="pswp__container">
+            <!-- don't modify these 3 pswp__item elements, data is added later on -->
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+    </div>
+    </div>
 
 
 <footer>
-    <small>&copy;2016 Design by Anna Karlovskaya</small>
+    <small>&copy;2016 Design and development by Anna Karlovskaya</small>
     <a href="#top" class="skip-to-top">You have reached bottom. Click this link to get back on top.</a>
 </footer>
-   
+
+
 <script type="text/javascript" src="scripts/jquery-3.1.0.min.js"></script>
-<script src="scripts/lightGallery-master/dist/js/lightgallery.min.js"></script>
-    <!-- lightgallery plugins -->
-    <script src="scripts/lightGallery-master/dist/js/lg-thumbnail.min.js"></script>
-    <script src="scripts/lightGallery-master/dist/js/lg-fullscreen.min.js"></script>
-<!-- <script type="text/javascript" src="scripts/imagelightbox.min.js "></script>
-<script type="text/javascript" src="scripts/script.js "></script> -->
-<!-- 
-<script src="scripts/lity-2.0.0/vendor/jquery.js"></script>
-<script src="scripts/lity-2.0.0/dist/lity.js"></script>
-<script src="scripts/lity-2.0.0/assets/prism.js"></script> -->
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#lightgallery").lightGallery(); 
-    });
-</script>
-
-
+<script src="scripts/script.js"></script>
+   
 </body>
 </html>

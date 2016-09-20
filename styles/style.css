@@ -39,7 +39,8 @@ h3 {
 p {
 	/*font-family: 'Work Sans', Geneva, Tahoma, Verdana, sans-serif;*/
 	/*font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;*/
-	font-family: 'Noto Sans', sans-serif;
+	/*font-family: 'Noto Sans', sans-serif;*/
+	font-family: 'Montserrat', Geneva, Tahoma, Verdana, sans-serif;
 	/*font-size: 2em;*/
 	line-height: 1.6;
 }
@@ -101,8 +102,9 @@ figcaption {
 
 header {
 	background-color: #e5e3de;
-	padding-bottom: 1%;
+	/*padding-bottom: 1%;*/
 	/*z-index: 9999;*/
+	/*color: #f3f0eb;*/
 }
 
 .inner-nav h1 {
@@ -110,10 +112,12 @@ header {
 	line-height: 70px;
 	text-align: center;
 	font-size: 1.3em;
+
 }
 
 .inner-nav a {
 	text-decoration: none;
+
 }
 
 nav ul {
@@ -133,73 +137,87 @@ li a {
 	font-size: 1.2em;
 }
 
-/* -----------------------------
-landing page 
------------------------------- */
-
-/*.landing_wrapper {
-	position: relative;
-}*/
-
-.circles2 {
-	width: 500px;
-	height: 500px;
- 	position: absolute;
-/*  	right: 0;*/
-  	/*bottom: 0;*/
-  	left: -273px;
-  	top: -203px;
-
+.active {
+	border-bottom: 4px solid #fa3939;
 }
-
-.circles1 {
-	width: 450px;
-	height: 450px;
- 	position: absolute;
-  	right: -60px;
-  	bottom: -30px;
-  	/*left: 0;*/
-  	padding: 1rem;
-  	margin-bottom: 1rem;
-}
-
-.landing_container {
-	background: url(../images/just_circles.svg) top left no-repeat;
-	height: 500px;
-	margin-top: 15%;
-	text-align: center;
-}
-
-.landing_container h1 {
-	/*font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;*/
-	font-family: 'Montserrat', Geneva, Tahoma, Verdana, sans-serif;
-}
-
 
 /* -----------------------------
 index page 
 ------------------------------ */
 
-.intro_hello {
-	margin: 5% 0 10%;
+.main_links a{
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px solid #4F4F4F;
+	/*background-color: #4F4F4F;*/
+	/*color: #f3f0eb;*/
+	padding: 2%;
+	margin-right: 2%;
+}
+
+.intro {
+	height: 500px;
+	/*background: url(../images/bg.svg) right no-repeat;*/
+	background: url(../images/lightpaperfibers.png) repeat;
+	/*width: 100%;*/
+	/*margin: 5% 0;*/
+	background-color: #FFFCF7;
+	/*position: fixed;*/
+	width: 100%;
+	/*padding: 5% 10% 0;*/
+	/*border: 3px solid #222;*/
+	position: relative;
+	margin-top: 15%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.instruction_img {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	/*top: 28%;*/
+	right: 0;
+}
+
+.hello {
+	position: absolute;
+	top: 28%;
+	left: 22%;
+}
+
+.hello p:first-child {
+	font-size: 2.8em;
+	font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;
+}
+
+.hello p {
+	font-size: 1.3em;
+	font-family: 'Montserrat', Geneva, Tahoma, Verdana, sans-serif;
+	margin: 0;
+	line-height: 2;
+}
+
+.origami {
+	/*background: url(../images/origami.png) no-repeat center;*/
+	position: absolute;
+	width: 20%;
+	height: auto;
+/*	top: 50%;
+	left: 60%;*/
+		top: 27%;
+	left: 64%;
+
+}
+
+main h2 {
+	font-size: 2.5em;
+	letter-spacing: 1.5px;
+	font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;
+	margin: 8% 0;
 	text-align: center;
 
 }
 
-.intro_hello h2 {
-	font-size: 2em;
-	/*font-family: 'Work Sans', Geneva, Tahoma, Verdana, sans-serif;*/
-	font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;
-	margin-top: 10%;
-	/*font-family: 'Noto Sans', sans-serif;*/
-}
-
-
-.intro_hello p {
-	font-size: 1.5em;
-	font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;
-	margin: 0;
-}
 
 #content {
 	margin: 2% 5%;
@@ -259,20 +277,25 @@ article a {
 article a:hover,
 article a:focus,
 article a:active {
-	/*color: #f3f0eb;*/
-	color: #222;
+	color: #fa3939;
 	border: 3px solid #fa3939;
 	/*border: 3px solid #f3f0eb;*/
+	box-shadow: 0 0 3px #FF0000;
 }
 
 .contact_me {
-		text-align: center;
+	text-align: center;
+	
+	width: 40%;
+	/*height: 400px;*/
+	margin: 0 auto;
 }
 
 .contact_me p{
 	text-align: center;
 	font-family: 'Montserrat', Geneva, Tahoma, Verdana, sans-serif;
-	font-size: 1.3em;
+	/*font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;*/
+	font-size: 2em;
 }
 
 
@@ -284,6 +307,7 @@ article a:active {
 	height: 50px;
 	border: transparent;
 	background-color: transparent;
+	background: url(../images/small_origami.svg) left no-repeat;
 }
 
 .contact_me button a {
@@ -391,7 +415,10 @@ about page
 	margin-right: 5%;
 }
 
-
+/*.about_text {
+		background: url(../images/just_circles.svg) right no-repeat;
+		background-color: rgb(241, 241, 239);
+}*/
 
 .socials li a,
 .about_text a {
@@ -509,10 +536,16 @@ media queries
 index page 
 ------------------------------ */
 
+/*.intro_hello {
+	height: 300px;
+	background: url(../images/pic3.svg) right no-repeat;
+	width: 100%;
+}
+
 .intro_hello h2 {
 	font-size: 3em;
 }
-
+*/
 #content {
 	width: 100%;
 	max-width: 1200px;
@@ -564,6 +597,12 @@ h3 {
 about page 
 ------------------------------ */
 
+.circles_bg {
+	background: url(../images/just_circles.svg) no-repeat top left;
+	width: 150px;
+	height: 150px;
+}
+
 .wrapper_text {
 	width: 80%;
 	max-width: 1600px;
@@ -576,11 +615,11 @@ about page
 	margin-left: 10%;
 	margin-right: 8%;
 	max-width: 600px;
-	line-height: 1.4;
 }
 
 .about_text p {
-	line-height: 1.5;
+	line-height: 1.6;
+	font-size: 1.1em;
 }
 
 .about_text h1 {
@@ -598,13 +637,13 @@ about page
 single project page 
 ------------------------------ */
 
-.project_section {
-	margin: 10% auto 0;
-	width: 60%;
-}
-
-.requirements li{
-	list-style-type: square;
+.intro_partiendo {
+	width: 100%;
+	height: 400px;
+	background: url(../images/lightpaperfibers.png) repeat;
+	padding: 5%;
+	font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;
+	text-transform: none;
 }
 
 
@@ -613,7 +652,7 @@ single project page
 	margin: 0 auto;
 }
 
-#lightgallery {
+.flex_container {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: space-around;
@@ -621,16 +660,21 @@ single project page
 	margin: 5% auto;
 }
 
-#lightgallery img {
+.flex_container div {
+	width: 600px;
+	margin: 1%;
+}
+
+.flex_container img {
 	width: 100%;
 	height: auto;
 }
 
-/*#lightgallery li {
+.flex_container li {
 	width: 600px;
-	margin: 1%;
+	margin: 5%;
 }
-*/
+
 /*lightgallery div {
 	width: 600px;
 	margin: 1%;
@@ -638,7 +682,12 @@ single project page
 
 .text {
 	/*width: 60%;*/
-	margin: 5% 0;
+	margin: 5% 0 10%;
+}
+
+.viewLive_partiendo {
+	margin: 0 auto;
+	width: 500px;
 }
 
 }
