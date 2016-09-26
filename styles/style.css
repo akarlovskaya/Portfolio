@@ -15,7 +15,6 @@ html {
 
 body {
 	font-family: 'Montserrat', Geneva, Tahoma, Verdana, sans-serif;
-	/*background-color: rgb(241, 241, 239);*/
 	color: #222;
 	background-color: #f3f0eb;
 	margin: 0;
@@ -30,18 +29,13 @@ h1 {
 }
 
 h3 {
-	/*font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;*/
 	font-size: 1.5em;
 	text-transform: uppercase;
 	margin-top: 10%;
 }
 
 p {
-	/*font-family: 'Work Sans', Geneva, Tahoma, Verdana, sans-serif;*/
-	/*font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;*/
-	/*font-family: 'Noto Sans', sans-serif;*/
 	font-family: 'Montserrat', Geneva, Tahoma, Verdana, sans-serif;
-	/*font-size: 2em;*/
 	line-height: 1.6;
 }
 
@@ -55,15 +49,11 @@ a:active {
 	color: #fa3939;
 }
 
-figcaption {
-	font-size: 1em;
-	font-weight: none;
-}
-
 /** {
 	border: 1px solid black;
-}
-*/
+}*/
+
+
 /* a11y style */
 
 .screen-reader-text {
@@ -88,7 +78,8 @@ figcaption {
 
 .skip-to-content:focus {
     position: absolute;
-    top: 15%;
+    top: 2%;
+    /*color: #222;*/
 }
 
 .skip-to-top {
@@ -96,15 +87,10 @@ figcaption {
     text-indent: -9999px;
 }
 
-
-
 /* navigation */
 
 header {
 	background-color: #e5e3de;
-	/*padding-bottom: 1%;*/
-	/*z-index: 9999;*/
-	/*color: #f3f0eb;*/
 }
 
 .inner-nav h1 {
@@ -112,7 +98,10 @@ header {
 	line-height: 70px;
 	text-align: center;
 	font-size: 1.3em;
+}
 
+.inner-nav li {
+	margin-bottom: 3%;
 }
 
 .inner-nav a {
@@ -130,6 +119,7 @@ nav ul {
 
 li {
 	list-style-type: none;
+	
 }
 
 li a {
@@ -149,23 +139,15 @@ index page
 	text-transform: uppercase;
 	text-decoration: none;
 	border: 3px solid #4F4F4F;
-	/*background-color: #4F4F4F;*/
-	/*color: #f3f0eb;*/
 	padding: 2%;
 	margin-right: 2%;
 }
 
 .intro {
 	height: 500px;
-	/*background: url(../images/bg.svg) right no-repeat;*/
 	background: url(../images/lightpaperfibers.png) repeat;
-	/*width: 100%;*/
-	/*margin: 5% 0;*/
 	background-color: #FFFCF7;
-	/*position: fixed;*/
 	width: 100%;
-	/*padding: 5% 10% 0;*/
-	/*border: 3px solid #222;*/
 	position: relative;
 	margin-top: 15%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -173,16 +155,14 @@ index page
 
 .instruction_img {
 	position: absolute;
-	width: 50%;
 	height: auto;
-	/*top: 28%;*/
 	right: 0;
 }
 
 .hello {
 	position: absolute;
 	top: 28%;
-	left: 22%;
+	padding: 0 15%;
 }
 
 .hello p:first-child {
@@ -197,16 +177,11 @@ index page
 	line-height: 2;
 }
 
-.origami {
-	/*background: url(../images/origami.png) no-repeat center;*/
+.red_origami {
 	position: absolute;
-	width: 20%;
+	width: 35%;
 	height: auto;
-/*	top: 50%;
-	left: 60%;*/
-		top: 27%;
-	left: 64%;
-
+	top: 7%;
 }
 
 main h2 {
@@ -215,7 +190,6 @@ main h2 {
 	font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;
 	margin: 8% 0;
 	text-align: center;
-
 }
 
 
@@ -223,15 +197,17 @@ main h2 {
 	margin: 2% 5%;
 }
 
+/* -----------------------------
+works page 
+------------------------------ */
+
 figure {
 	margin-top: 0;
 }
 
-
 figure img {
 	width: 100%;
 	height: auto;
-	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 figcaption {
@@ -241,7 +217,8 @@ figcaption {
 }
 
 article {
-	margin-left: 2%;
+	margin-left: 5%;
+	margin-bottom: 15%;
 }
 
 article ul {
@@ -268,8 +245,6 @@ article a {
 	text-transform: uppercase;
 	text-decoration: none;
 	border: 3px solid #4F4F4F;
-	/*background-color: #4F4F4F;*/
-	/*color: #f3f0eb;*/
 	padding: 2%;
 	margin-right: 2%;
 }
@@ -279,50 +254,58 @@ article a:focus,
 article a:active {
 	color: #fa3939;
 	border: 3px solid #fa3939;
-	/*border: 3px solid #f3f0eb;*/
-	box-shadow: 0 0 3px #FF0000;
+}
+
+.tools {
+	border-top: 1px #4d4d4d solid;
+}
+
+.tools p {
+	font-size: 1.2em;
+}
+
+.tools li {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	line-height: 1.7;
+
 }
 
 .contact_me {
 	text-align: center;
-	
 	width: 40%;
-	/*height: 400px;*/
 	margin: 0 auto;
 }
 
 .contact_me p{
 	text-align: center;
 	font-family: 'Montserrat', Geneva, Tahoma, Verdana, sans-serif;
-	/*font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;*/
 	font-size: 2em;
+	margin: 0 0 5%;
 }
 
-
-
-.contact_me button {
-	/*background-color: #fa3939;*/
+.emailme {
 	color: #222;
 	width: 150px;
 	height: 50px;
+	margin: 0 auto;
 	border: transparent;
 	background-color: transparent;
-	background: url(../images/small_origami.svg) left no-repeat;
+	background: url(../images/small_origami.svg) top left no-repeat;
+	line-height: 50px;
 }
 
-.contact_me button a {
+.emailme a {
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.5em;
 	border-bottom: 3px solid #c3c3c3;
 	font-family: 'Montserrat', Geneva, Tahoma, Verdana, sans-serif;
-	/*padding-bottom: 20px;*/
-	/*font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;*/
+
 }
 
-.contact_me button a:hover,
-.contact_me button a:focus,
-.contact_me button a:active {
+.emailme a:hover,
+.emailme a:focus,
+.emailme a:active {
 	color: #222;
 	border-bottom: 4px solid #fa3939;
 }
@@ -336,7 +319,6 @@ footer {
   	left: 0;
   	padding: 1rem;
   	margin-bottom: 1rem;
-/*  background-color: #efefef;*/
 }
 
 /* back to top arrow style */
@@ -390,11 +372,16 @@ footer {
 /* -----------------------------
 about page 
 ------------------------------ */
+.about_photo {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
 
 .about_photo img{
-	/*width: 100%;*/
-	/*max-width: 200px;*/
-	max-width: 100%;
+	max-width: 70%;
 	height: auto;
 	margin: 0 auto;
 	display: block;
@@ -415,19 +402,12 @@ about page
 	margin-right: 5%;
 }
 
-/*.about_text {
-		background: url(../images/just_circles.svg) right no-repeat;
-		background-color: rgb(241, 241, 239);
-}*/
-
 .socials li a,
 .about_text a {
 	line-height: 20px;
 	text-transform: none;
 	text-decoration: none;
 	border-bottom: 3px solid #c3c3c3;
-	/*margin-right: 5%;*/
-
 }
 
 .socials a:hover,
@@ -438,6 +418,26 @@ about page
 .about_text a:active {
 	color: #222;
 	border-bottom: 4px solid #fa3939;
+}
+
+.like_button {
+	margin: 10% auto 0;
+	text-align: center;
+	width: 100%;
+}
+
+.like_button a {
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px solid #4F4F4F;
+	padding: 3%;
+	/*margin-right: 2%;*/
+}
+
+.like_button a:hover,
+.like_button a:focus,
+.like_button a:active {
+	border: 3px solid #fa3939;
 }
 
 
@@ -451,26 +451,35 @@ about page
 /* -----------------------------
 single project page 
 ------------------------------ */
-.intro img {
-	max-width: 100%;
-	height: auto;
+
+.flex_container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+    flex-direction: column;
 }
 
-#lightgallery a {
-	border: none;
+.flex_container div {
+	margin: 1%;
 }
 
-#lightgallery img {
+.flex_container img {
 	width: 100%;
 	height: auto;
 }
 
-#lightgallery div {
-	margin: 3%;
+.partiendo_live {
+	margin-top: 10%;
 }
 
-.text div {
-	margin: 5% auto;
+/* -----------------------------
+404 page
+------------------------------ */
+.origami_404 {
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 10%;
 }
 
 
@@ -480,7 +489,7 @@ media queries
 
 @media only screen and (min-width: 750px) {
 
-		/* navigation */
+	/* navigation */
 
 	.inner-nav {
 		display: -webkit-flex;
@@ -527,6 +536,7 @@ media queries
 		width: 80%;
 		max-width: 1200px;
 	}
+
 	body {
 		border-left: 30px solid #222;
 		border-right: 30px solid #222;
@@ -536,16 +546,6 @@ media queries
 index page 
 ------------------------------ */
 
-/*.intro_hello {
-	height: 300px;
-	background: url(../images/pic3.svg) right no-repeat;
-	width: 100%;
-}
-
-.intro_hello h2 {
-	font-size: 3em;
-}
-*/
 #content {
 	width: 100%;
 	max-width: 1200px;
@@ -555,7 +555,7 @@ index page
 .project_intro {
 	display: -webkit-flex;
     display: flex;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 	padding: 0;
 	background-color: transparent;
 }
@@ -576,6 +576,12 @@ article {
 
 h3 {
 	margin-top: 2%;
+}
+
+.red_origami {
+	width: 20%;
+	height: auto;
+	top: 7%;
 }
 
 /* back to top arrow style */
@@ -638,6 +644,7 @@ single project page
 ------------------------------ */
 
 .intro_partiendo {
+	position: relative;
 	width: 100%;
 	height: 400px;
 	background: url(../images/lightpaperfibers.png) repeat;
@@ -646,15 +653,22 @@ single project page
 	text-transform: none;
 }
 
+.intro_partiendo h2 {
+	margin: 2% 0 0 ;
+}
 
+.intro_partiendo div {
+	width: 65%;
+	margin: 4% auto 0;
+}
 .wrapper_project {
 	width: 70%;
 	margin: 0 auto;
 }
 
 .flex_container {
-	display: -webkit-flex;
-	display: flex;
+	-webkit-flex-direction: row;
+    flex-direction: row;
 	-webkit-justify-content: space-around;
 	justify-content: space-around;
 	margin: 5% auto;
@@ -670,24 +684,23 @@ single project page
 	height: auto;
 }
 
-.flex_container li {
-	width: 600px;
-	margin: 5%;
-}
-
-/*lightgallery div {
-	width: 600px;
-	margin: 1%;
-}*/
-
-.text {
-	/*width: 60%;*/
+.text 
 	margin: 5% 0 10%;
 }
 
 .viewLive_partiendo {
 	margin: 0 auto;
 	width: 500px;
+}
+
+/* -----------------------------
+404 page 
+------------------------------ */
+
+.origami_404 {
+	width: 30%;
+	right: 10%;
+
 }
 
 }
