@@ -79,7 +79,6 @@ a:active {
 .skip-to-content:focus {
     position: absolute;
     top: 2%;
-    /*color: #222;*/
 }
 
 .skip-to-top {
@@ -149,7 +148,6 @@ index page
 	background-color: #FFFCF7;
 	width: 100%;
 	position: relative;
-	margin-top: 15%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -268,7 +266,6 @@ article a:active {
 	font-size: 0.9em;
 	letter-spacing: 1px;
 	line-height: 1.7;
-
 }
 
 .contact_me {
@@ -376,8 +373,6 @@ about page
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: center;
 }
 
 .about_photo img{
@@ -388,7 +383,7 @@ about page
 	margin-top: 15%;
 }
 
-.socials ul{
+.socials ul {
 	display: -webkit-flex;
 	display: flex;
 	width: 100%;
@@ -397,13 +392,27 @@ about page
 	justify-content: center;
 }
 
+.socials li a {
+	font-size: 1em;
+}
+
+.hello_links ul {
+	display: -webkit-flex;
+	display: flex;
+	font-size: 0.9em;
+	width: 100%;
+	padding: 0;
+}
+
+.hello_links ul li:first-child,
 .socials ul li:first-child,
 .socials ul li:nth-child(2) {
 	margin-right: 5%;
 }
 
 .socials li a,
-.about_text a {
+.about_text a,
+.hello_links li a {
 	line-height: 20px;
 	text-transform: none;
 	text-decoration: none;
@@ -413,6 +422,9 @@ about page
 .socials a:hover,
 .socials a:focus,
 .socials a:active,
+.hello_links a:hover,
+.hello_links a:focus,
+.hello_links a:active,
 .about_text a:hover,
 .about_text a:focus,
 .about_text a:active {
@@ -431,7 +443,6 @@ about page
 	text-decoration: none;
 	border: 3px solid #4F4F4F;
 	padding: 3%;
-	/*margin-right: 2%;*/
 }
 
 .like_button a:hover,
@@ -523,12 +534,10 @@ media queries
 
 	li:first-child {
 		margin-right: 5%;
-
 	}
 
-	li a {
+	nav li a {
 		line-height: 70px;
-		font-size: 1em;
 	}
 
 
@@ -591,13 +600,6 @@ h3 {
 	bottom: 30px;
 	right: 60px;
 }
-
-/** {
-	border: 1px solid black;
-}
-*/
-
-
 
 /* -----------------------------
 about page 
@@ -684,8 +686,9 @@ single project page
 	height: auto;
 }
 
-.text 
+.text {
 	margin: 5% 0 10%;
+}
 }
 
 .viewLive_partiendo {
@@ -704,9 +707,3 @@ single project page
 }
 
 }
-
-
-
-
-
-
