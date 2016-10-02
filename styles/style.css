@@ -488,9 +488,11 @@ single project page
 
 .gallery a {
 	border: none;
+	padding: 0;
 }
 
-.gallery a:hover{
+.gallery a:hover,
+.gallery a:focus {
 	border: none;
 }
 
