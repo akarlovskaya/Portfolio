@@ -1,10 +1,12 @@
-// baguettebox gallery
-baguetteBox.run('.gallery');
+
 
 
 // Back to Top arrow
 
 $(document).ready(function(){
+
+    // baguettebox gallery
+baguetteBox.run('.gallery');
 
     // hide #back-top first
     $("#back-top").hide();
