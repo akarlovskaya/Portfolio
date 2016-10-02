@@ -37,6 +37,7 @@ h3 {
 p {
 	font-family: 'Montserrat', Geneva, Tahoma, Verdana, sans-serif;
 	line-height: 1.6;
+	font-size: 1.1em;
 }
 
 a {
@@ -485,9 +486,19 @@ single project page
 	height: auto;
 }
 
+.gallery a {
+	border: none;
+}
+
+.gallery a:hover{
+	border: none;
+}
+
 .partiendo_live {
 	margin-top: 10%;
 }
+
+
 
 /* -----------------------------
 404 page

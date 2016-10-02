@@ -7,15 +7,11 @@
     <meta name="description" content="Web Designer in Vancouver, Canada">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat|Work+Sans:400,500" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 
-    <!-- PhotoSwipe Gallery CDNs -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.css"> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script> 
-
+    <!-- baguettebox gallery -->
+    <link rel="stylesheet" type="text/css" href="styles/baguetteBox.min.css">
+    <script src="scripts/baguetteBox.min.js" async></script>
     
 </head>
 <body >
@@ -54,17 +50,21 @@
                 <p>Using action buttons on <strong>Home page</strong> serves to split the audience on two  primary groups &mdash; employers and candidates. </p>
                 <p> On <strong>Job Seeker page</strong>  I wanted to focus user&rsquo;s attention on searching section and option to send CV to the agency&rsquo;s database. Also I added few articles about agency&rsquo;s services for candidates to catch their attention to them. </p>
                 <p><strong>About page</strong> structure is pretty straightforward - about company section with story and expertise information, list of main clients and information about recruiters with their social links.</p>
-                <p>CLick on these images to see details.</p>
+                <p>Select an image below to see details.</p>
 
 
-                <!-- Wireframe Images -->
-
-                <div class="flex_container">
-
-                <div><img onclick="openPS1(1)" src="images/home.png" alt="Home Page Wireframe"/> </div> 
-                <div><img onclick="openPS1(2)" src="images/jobSeeker.png" alt="Job Seeker Page Wireframe"/></div> 
-                <div><img onclick="openPS1(3)" src="images/about.png" alt="About Page Wireframe"/></div> 
+                <div class="gallery flex_container">
+                    <a href="images/home.png" data-caption="Home Page Wireframe">
+                        <img src="images/home.png" alt="Home Page Wireframe">
+                    </a>
+                    <a href="images/jobSeeker.png" data-caption="Job Seeker Page Wireframe">
+                        <img src="images/jobSeeker.png" alt="Job Seeker Page Wireframe">
+                    </a>
+                    <a href="images/about.png" data-caption="About Page Wireframe">
+                        <img src="images/about.png" alt="About Page Wireframe">
+                    </a>
                 </div>
+
 
             </article>
 
@@ -72,12 +72,15 @@
                 <h2>Creating Style and Mood</h2>
 
                 <p>I created two versions of styletiles with different color pallets and minor changes for content presentation. As final style I chose the first one - more colorful and with two sans serif fonts &mdash; &ldquo;Quicksand&rdquo; for headings by Andrew Paglinawan and &ldquo;Work Sans&rdquo; for paragraphs by Wei Huang, because I think this combination served my design goals better then other options.</p>
-                <p>CLick on images below to see details.</p>
+                <p>Select an image below to see details.</p>
 
-                <div class="flex_container">
-                       <div> <img onclick="openPS2(1)" src="images/style_tile1.png" alt="Version One of Style Tile"/></div>
-                       <div>  <img onclick="openPS2(2)" src="images/style_tile2.png" alt="Version Two of Style Tile"/></div>
-
+                <div class="gallery flex_container">
+                    <a href="images/style_tile1.png" data-caption="Version One of Style Tile">
+                        <img src="images/style_tile1.png" alt="Version One of Style Tile">
+                    </a>
+                    <a href="images/style_tile2.png" data-caption="Version Two of Style Tile">
+                        <img src="images/style_tile2.png" alt="Version Two of Style Tile">
+                    </a>
                 </div>
 
                 <div class="partiendo_live">
@@ -91,63 +94,7 @@
     </div> <!-- end .wrapper_project -->
     
 </main>
-    <!-- Gallery -->
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-    It's a separate element, as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <div class="pswp__container">
-            <!-- don't modify these 3 pswp__item elements, data is added later on -->
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader-active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-    </div>
-    </div>
-
+    
 
 <footer>
     <small>&copy;2016 Design and development by Anna Karlovskaya</small>
@@ -160,6 +107,7 @@
 
 <script type="text/javascript" src="scripts/jquery-3.1.0.min.js"></script>
 <script src="scripts/script.js"></script>
+
    
 </body>
 </html>
