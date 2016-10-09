@@ -1,3 +1,7 @@
+/** {
+	border: 1px solid black;
+}*/
+
 
 /* -------------------------------
  general style 
@@ -49,11 +53,6 @@ a:focus,
 a:active {
 	color: #fa3939;
 }
-
-/** {
-	border: 1px solid black;
-}*/
-
 
 /* a11y style */
 
@@ -149,9 +148,7 @@ index page
 	background-color: #FFFCF7;
 	width: 100%;
 	position: relative;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .instruction_img {
@@ -232,6 +229,10 @@ article ul {
 
 article ul li {
 	line-height: 1.4;
+}
+
+span {
+	font-weight: bold;
 }
 
 .project_data p {
@@ -369,6 +370,7 @@ footer {
 	-moz-transition: 1s;
 	transition: 1s;
 }
+
 #back-top a:hover span {
 	background-color: #ddd;
 }
@@ -379,6 +381,7 @@ about page
 .about_photo {
 	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-direction: column;
 	flex-direction: column;
 }
 
@@ -409,6 +412,12 @@ about page
 	font-size: 0.9em;
 	width: 100%;
 	padding: 0;
+	margin-top: 7%;
+	text-transform: uppercase;
+}
+
+.hello_links ul li a {
+	text-transform: uppercase;
 }
 
 .hello_links ul li:first-child,
@@ -488,7 +497,7 @@ single project page
 
 .gallery a {
 	border: none;
-	padding: 0;
+	padding: 20px;
 }
 
 .gallery a:hover,
@@ -499,8 +508,6 @@ single project page
 .partiendo_live {
 	margin-top: 10%;
 }
-
-
 
 /* -----------------------------
 404 page
@@ -517,7 +524,7 @@ single project page
 media queries
 ------------------------------ */
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 870px) {
 
 	/* navigation */
 
@@ -664,27 +671,28 @@ about page
 single project page 
 ------------------------------ */
 
+.main_partiendo {
+	padding: 5% 0 10%;
+}
+
 .intro_partiendo {
-	position: relative;
-	width: 100%;
 	height: 400px;
 	background: url(../images/lightpaperfibers.png) repeat;
-	padding: 5%;
-	font-family: 'Libre Baskerville', 'Hoefler Text', Garamond, serif;
-	text-transform: none;
 }
 
 .intro_partiendo h2 {
-	margin: 2% 0 0 ;
+	padding: 5% 0 3%;
+	margin: 0;
 }
 
 .intro_partiendo div {
 	width: 65%;
-	margin: 4% auto 0;
+	margin: 0 auto;
 }
+
 .wrapper_project {
 	width: 70%;
-	margin: 0 auto;
+	margin: 10% auto;
 }
 
 .flex_container {
@@ -705,9 +713,12 @@ single project page
 	height: auto;
 }
 
+.gallery a {
+	padding: 0;
+}
+
 .text {
 	margin: 5% 0 10%;
-}
 }
 
 .viewLive_partiendo {
@@ -725,4 +736,4 @@ single project page
 
 }
 
-}
+} /* end media query
