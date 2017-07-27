@@ -207,6 +207,15 @@ figure img {
 	height: auto;
 }
 
+.magento {
+	text-align: center;
+}
+
+.magento img {
+  max-width: 300px;
+	margin-top: 30px;
+}
+
 figcaption {
 	margin-top: 5%;
 	font-style: italic;
@@ -240,6 +249,10 @@ dt {
 	font-style: italic;
 	margin: 0;
 	line-height: 1.4;
+}
+
+.magento_projects p {
+    margin: 22px 0 3px;
 }
 
 .project_intro {
