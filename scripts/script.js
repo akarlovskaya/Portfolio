@@ -1,5 +1,4 @@
 // Back to Top arrow
-
 $(document).ready(function(){
 
     // baguettebox gallery
@@ -7,7 +6,7 @@ $(document).ready(function(){
 
     // hide #back-top first
     $("#back-top").hide();
-    
+
     // fade in #back-top
     $(function () {
         $(window).scroll(function () {
@@ -25,5 +24,33 @@ $(document).ready(function(){
             }, 800);
             return false;
         });
+    });
+
+    // Sorting nav
+    $(".sorting_nav a").click(function(){
+      // 1. store data-type attribute
+      var chosenItem = $(this).attr("data-type");
+
+      // 2. hide all matched elements
+       $(".project_intro").hide();
+
+      // 3. if 'color' is not defined hide/show all elements ("show all" button), if color IS defined show elemtnts that match color variable
+      (!chosenItem) ? $(".project_intro").hide().fadeIn(625) : $('div[data-type="' + chosenItem + '"]').fadeIn(625);
+
+      // classes for nav buttons
+      $('.selected').removeClass('selected');
+      $(this).addClass('selected');
+    });
+
+
+    // remove hover sign
+    $(".email").mouseover(function(){
+      var hoveredEl = $(this).find(".hover_sign");
+      hoveredEl.animate({right: "-350px"}, 800);
+    });
+
+    $(".email").mouseout(function(){
+      var hoveredEl = $(this).find(".hover_sign");
+      hoveredEl.animate({right: "0px"}, 600);
     });
 });

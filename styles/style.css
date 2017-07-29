@@ -191,11 +191,53 @@ index page
 /* -----------------------------
 works page
 ------------------------------ */
+/* sorting nav style */
+.wrapper_projects nav {
+	text-align: center;
+	max-width: 800px;
+	margin: 45px auto 30px;
+}
+.sorting_nav {
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
 
+.sorting_nav li a {
+  display: block;
+	width: 140px;
+	margin-top: 10px;
+	background: rgba(0,0,0,.1);
+	padding: 9px 15px;
+	border-radius: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.sorting_nav li a:hover,
+.sorting_nav li a:active,
+.sorting_nav li a:focus {
+	border-bottom: none;
+}
+
+.sorting_nav li a {
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.sorting_nav .selected, .nav .selected:hover {
+	box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	background-color: rgba(255, 51, 51,0.6);
+}
+
+.sorting_nav li a:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* projects sections */
 .wrapper_projects h1 {
 	text-transform: uppercase;
 	text-align: center;
-	margin: 100px auto 70px;
+	margin: 60px auto 20px;
 }
 
 figure {
@@ -261,6 +303,26 @@ dt {
 	background: url(../images/lightpaperfibers.png) repeat;
 }
 
+/* style for email hover image effect */
+.email {
+	overflow: hidden;
+	position: relative;
+	height: 380px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.email img {
+	position: absolute;
+	top: 0;
+	height: auto;
+	transition: top 5s ease-out 0s;
+}
+
+.email img:hover {
+	top: -700px;
+}
+
 /* square links View Live */
 .links {
 	text-transform: uppercase;
@@ -313,9 +375,9 @@ dt {
 	background-color: transparent;
 	background: url(../images/small_origami.svg) top left no-repeat;
 	display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction:row;
-    flex-direction: row;
+  display: flex;
+  -webkit-flex-direction:row;
+  flex-direction: row;
 }
 
 .email_link {
@@ -562,6 +624,20 @@ index page
 		margin: 0 50px 50px;
 	}
 
+	/* -----------------------------
+	works page
+	------------------------------ */
+	.sorting_nav li a {
+		font-size: 0.8em;
+		letter-spacing: 1px;
+		text-decoration: none;
+	}
+
+	/* style for email hover image effect */
+	.email {
+		max-width: none;
+		width: 400px;
+	}
 
 }  /*end min-width: 580px*/
 
@@ -589,13 +665,13 @@ index page
 
 	}
 
-	nav {
+	.inner-nav nav {
 		flex-grow: 2;
 		-webkit-flex-grow: 2;
 
 	}
 
-	nav ul {
+	.inner-nav nav ul {
 		display: -webkit-flex;
 		display: flex;
 		-webkit-justify-content: flex-end;
@@ -603,11 +679,11 @@ index page
 		margin: 0;
 	}
 
-	li:first-child {
+	.inner-nav li:first-child {
 		margin-right: 5%;
 	}
 
-	nav li a {
+	.inner-nav nav li a {
 		line-height: 70px;
 	}
 
@@ -650,6 +726,23 @@ index page
 /* -----------------------------
 works page
 ------------------------------ */
+/* hover sign */
+.hover_sign {
+	text-align: center;
+	z-index: 1;
+	background-color: white;
+	height: 50px;
+  width: 100px;
+	top: 0;
+	right: 0;
+	position: absolute;
+	color: #fa3939;
+}
+
+.hover_sign p {
+	line-height: 1.2;
+	text-transform: uppercase;
+}
 
 	figure {
 		-webkit-flex: 2;

@@ -30,7 +30,18 @@
     <main>
         <div class="wrapper_projects" id="content">
             <h1>Selected Works</h1>
-            <div class="project_intro">
+
+            <nav>
+              <ul class="sorting_nav">
+                <li><a href="#">Show All</a></li>
+                <li><a href="#" data-type="magento"> Magento</a></li>
+                <li><a href="#" data-type="wordpress">WordPress</a></li>
+                <li><a href="#" data-type="emails">HTML Emails</a></li>
+                <li><a href="#" data-type="bcit">BCIT</a></li>
+              </ul>
+            </nav>
+
+            <div class="project_intro" data-type="magento">
                 <figure class="magento">
                     <img src="images/icon_magento.png" alt="Magento Logo">
                 </figure>
@@ -47,10 +58,88 @@
                         <dt><a href="https://www.cannagas.ca/" class="text_link" target="_blank">Cannagas</a>- Online Dispensary</dt>
                       </dl>
                     </div>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>HTML/HTML5, XML</li>
+                            <li>LESS, CSS/CSS3</li>
+                            <li>Javascript/jQuery</li>
+                            <li>PHP/PHTML</li>
+                            <li>GIT</li>
+                            <li>Responsive Web Design (RWD)</li>
+                            <li>HTML Email Templates</li>
+                            <li>Command-line user interface (CLI)</li>
+                        </ul>
+                    </div>
                 </article>
             </div>
 
-            <div class="project_intro">
+            <div class="project_intro" data-type="emails">
+
+                <figure class="email">
+                  <div class="hover_sign"><p>Hover</p></div>
+                  <img src="images/forest_screenshot.jpg" alt="Email Template Screenshot, example 01">
+                </figure>
+                <article>
+                    <h2>HTML Email Template 01</h2>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>GIT</li>
+                            <li>Responsive Web Design (RWD)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="links" href="http://annakarlovskaya.com/email-forest/" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="project_intro" data-type="emails">
+                <figure class="email">
+                  <div class="hover_sign"><p>Hover</p></div>
+                  <img src="images/vineyard_screenshot.jpg" alt="Email Template Screenshot, example 02">
+                </figure>
+                <article>
+                    <h2>HTML Email Template 02</h2>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>GIT</li>
+                            <li>Responsive Web Design (RWD)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="links" href="http://annakarlovskaya.com/email-vineyard/" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="project_intro" data-type="emails">
+                <figure class="email">
+                  <div class="hover_sign"><p>Hover</p></div>
+                  <img src="images/panda_screenshot.jpg" alt="Email Template Screenshot, example 03">
+                </figure>
+                <article>
+                    <h2>HTML Email Template 03</h2>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>GIT</li>
+                            <li>Responsive Web Design (RWD)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="links" href="http://annakarlovskaya.com/email-panda/" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div>
+
+
+            <div class="project_intro" data-type="wordpress">
                 <figure>
                     <img src="images/spanova.png" alt="">
                     <figcaption>A Spa Salon Theme</figcaption>
@@ -72,7 +161,7 @@
                             <li>UI/UX Design</li>
                             <li>Illustrator</li>
                             <li>Balsamiq Wireframing</li>
-                            <li>SourceTree</li>
+                            <li>GIT</li>
                             <li>SASS</li>
                         </ul>
                     </div>
@@ -82,7 +171,7 @@
                 </article>
             </div>
 
-            <div class="project_intro">
+            <div class="project_intro" data-type="wordpress">
                 <figure>
                     <img src="images/vgspa.png" alt="">
                     <figcaption>Spa Salon Website</figcaption>
@@ -107,7 +196,7 @@
                             <li>WordPress</li>
                             <li>UI/UX Design</li>
                             <li>Illustrator</li>
-                            <li>SourceTree</li>
+                            <li>GIT</li>
                             <li>SASS</li>
                         </ul>
                     </div>
@@ -118,7 +207,7 @@
                 </article>
             </div>
 
-            <div class="project_intro">
+            <div class="project_intro" data-type="wordpress">
                 <figure>
                     <img src="images/aimee.png" alt="">
                     <figcaption>An Artist&rsquo;s Portfolio Website</figcaption>
@@ -145,7 +234,7 @@
                 </article>
             </div>
 
-            <div class="project_intro">
+            <div class="project_intro" data-type="bcit">
                 <figure>
                     <img src="images/partiendo_screen.png" alt="">
                     <figcaption>Partiendo. Business Brochure Website</figcaption>
@@ -175,7 +264,7 @@
                     </div>
                 </article>
             </div>
-            <div class="project_intro">
+            <div class="project_intro" data-type="bcit">
                 <figure>
                     <img src="images/landing_page_devices.png" alt="">
                     <figcaption>Landing Page</figcaption>
@@ -201,7 +290,7 @@
                     </div>
                 </article>
             </div>
-            <div class="project_intro">
+            <div class="project_intro" data-type="bcit">
                 <figure>
                     <img src="images/dasmyjam.png" alt="">
                     <figcaption>Responsive Web Page from a pre-designed Mock-Up</figcaption>
@@ -230,7 +319,7 @@
                     </div>
                 </article>
             </div>
-            <div class="project_intro">
+            <div class="project_intro" data-type="bcit">
                 <figure>
                     <img src="images/wow.png" alt="">
                     <figcaption>WOW Radio. Responsive Web Page</figcaption>
@@ -262,7 +351,7 @@
                     </div>
                 </article>
             </div>
-            <div class="project_intro">
+            <div class="project_intro" data-type="bcit">
                 <figure>
                     <img src="images/newWorldsExplorer_screen.png" alt="">
                     <figcaption>
