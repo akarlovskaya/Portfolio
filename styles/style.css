@@ -276,8 +276,8 @@ figure img {
 }
 
 .magento img {
-    max-width: 300px;
-    margin-top: 30px;
+    max-width: 145px;
+    margin: 30px 0;
 }
 
 figcaption {
@@ -342,17 +342,17 @@ div[data-type="javascript"] h2 {
     max-width: 875px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .js-project-wrapper>div {
-    width: 47%;
+    width: 100%;
     max-width: 387px;
     background-color: #f2f2f2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    margin: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
 }
 
@@ -396,7 +396,7 @@ div[data-type="javascript"] h2 {
 }
 
 .js-project-wrapper ul {
-    padding-left: 16px;
+    padding-left: 23px;
     margin: 12px 30px 39px;
 }
 
@@ -810,6 +810,20 @@ works page
         position: fixed;
         bottom: 30px;
         right: 60px;
+    }
+    .magento img {
+        max-width: 200px;
+        /* margin-left: 210px; */
+    }
+    @media only screen and (min-width: 1200px) {
+        .magento img {
+            margin-left: 210px;
+        }
+    }
+    .js-project-wrapper>div {
+        width: 45%;
+        margin: 20px;
+        justify-content: space-between;
     }
     /* -----------------------------
 about page
