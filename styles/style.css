@@ -216,7 +216,7 @@ works page
 
 .wrapper_projects nav {
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 45px auto 30px;
 }
 
@@ -330,12 +330,29 @@ dd {
 
 /* JavaScript section */
 
-div[data-type="javascript"] {
+div[data-type="javascript"], div[data-type="reactjs"] {
     display: block;
 }
 
-div[data-type="javascript"] h2 {
+div[data-type="javascript"] h2, div[data-type="reactjs"] h2 {
     text-align: center;
+}
+
+div[data-type="javascript"] .links, div[data-type="reactjs"] .links {
+    display: block;
+    max-width: 71px;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid;
+    margin: auto;
+}
+
+div[data-type="javascript"] .links:hover, div[data-type="reactjs"] .links:hover {
+    color: #666;
+}
+
+div[data-type="reactjs"] img {
+    border-radius: 4px;
 }
 
 .js-project-wrapper {
@@ -397,7 +414,16 @@ div[data-type="javascript"] h2 {
 
 .js-project-wrapper ul {
     padding-left: 23px;
-    margin: 12px 30px 39px;
+    margin: 12px 30px 20px;
+}
+
+div[data-type="reactjs"] .js-project-wrapper div:not(:last-child) ul {
+    min-height: 208px;
+}
+
+div[data-type="javascript"] .js-project-wrapper ul {
+    min-height: 113px;
+    margin-bottom: 0;
 }
 
 .js-project-wrapper li {
@@ -824,6 +850,7 @@ works page
         width: 45%;
         margin: 20px;
         justify-content: space-between;
+        padding-bottom: 20px;
     }
     /* -----------------------------
 about page

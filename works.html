@@ -31,13 +31,153 @@
             <h1>Selected Works</h1>
             <nav>
               <ul class="sorting_nav">
-                <li><a href="#">Show All</a></li>
+                <li><a href="#" class="selected">Show All</a></li>
                 <li><a href="#" data-type="magento"> Magento</a></li>
                 <li><a href="#" data-type="wordpress">WordPress</a></li>
+                <li><a href="#" data-type="reactjs">ReactJs</a></li>
                 <li><a href="#" data-type="javascript">JavaScript</a></li>
                 <li><a href="#" data-type="bcit">BCIT</a></li>
               </ul>
             </nav>
+
+            <div class="project_intro" data-type="reactjs">
+                <h2>ReactJs Projects</h2>
+                <div class="js-project-wrapper">
+                    <div>
+                        <div class="js-title">
+                            <img src="images/reactjs-icon.png" alt="ReactJs icon">
+                            <a href="https://akarlovskaya.github.io/ReactJs-Single-Page-App/#/home" target="_blank"><h3>FooBar website</h3></a>
+                            <p>Single-Page App with React-Router</p>
+                        </div>
+                        <ul>
+                            <li>Routing: HashRouter, Switch, Route, Link, Navlink and Redirect from react-router-dom package</li>
+                            <li>CSS: Bootstrap (Bootswatch Lux theme) plus custom style as inline CSS and component CSS files</li>
+                            <li>Nice transition effect using CSSTransitionGroup from react-transition-group</li>
+                            <li>
+                                <a href="https://www.npmjs.com/package/classnames" class="text_link" target="_blank">Classnames</a>
+                                 module for conditional CSS and <a href="https://formidable.com/open-source/radium/" class="text_link" target="_blank">Radium</a> styling library for hovers
+                            </li>
+                        </ul>
+                        <a href="https://akarlovskaya.github.io/ReactJs-Single-Page-App/#/home" target="_blank" class="links">View Live</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/reactjs-icon.png" alt="ReactJs icon">
+                            <a href="https://akarlovskaya.github.io/Contact-Manager/" target="_blank"><h3>Contact Manager App</h3></a>
+                            <p>ReactJS simple app to manage contacts</p>
+                        </div>
+
+                        <ul>
+                            <li>Full CRUD functionality using Context API</li>
+                            <li>JSON Placeholder (fake online REST API) and Axios library for HTTP requests</li>
+                            <li><a href="https://www.npmjs.com/package/uuid" class="text_link" target="_blank">UUID</a> npm module for generating IDs on the fly (when did not use JSON Placeholder)</li>
+                            <li><a href="https://www.npmjs.com/package/classnames" class="text_link" target="_blank">Classnames</a>
+                             module for conditional CSS</li>
+                             <li>HashRouter from react-router-dom module</li>
+                        </ul>
+                        <a href="https://akarlovskaya.github.io/Contact-Manager/" target="_blank" class="links">View Live</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/reactjs-icon.png" alt="ReactJs icon">
+                            <a href="https://codepen.io/annakarlovskaya/pen/KxyeWx?editors=0110" target="_blank"><h3>String/array manipulations</h3></a>
+                            <p>ReactJs Practice</p>
+                        </div>
+                        <ul>
+                            <li>App component with three child components</li>
+                            <li>Text input with event listeners (onChange, onClick)</li>
+                            <li>Input validation</li>
+                        </ul>
+                        <a href="https://codepen.io/annakarlovskaya/pen/KxyeWx?editors=0110" target="_blank" class="links">Codepen</a>
+                    </div>
+                </div>
+            </div> <!-- .reactjs -->
+
+            <div class="project_intro" data-type="javascript">
+                <h2>Vanilla JS Projects</h2>
+                <div class="js-project-wrapper">
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/add_book/index.html" target="_blank"><h3>Book List</h3></a>
+                            <p>Add and delete a book using simple UI</p>
+                        </div>
+                        <ul>
+                            <li>OOP</li>
+                            <li>ES5 (ES6 version see in <a class="text_link" href="https://github.com/akarlovskaya/JS_30/blob/master/add_book/app-es6.js" target="_blank">GitHub repository</a>)</li>
+                            <li>Validation and Alerts</li>
+                            <li>Sceleton UI Framework</li>
+                        </ul>
+                        <a href="js-projects/add_book/index.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/calories-tracker-js/index.html" target="_blank"><h3>Calories Tracker</h3></a>
+                            <p>Vanilla JS and Module Pattern</p>
+                        </div>
+
+                        <ul>
+                            <li>ES6 syntax</li>
+                            <li>Three module controllers: Main App, Item and UI</li>
+                            <li>Materialize CSS as UI framework (based on Material Design)</li>
+                        </ul>
+                        <a href="js-projects/calories-tracker-js/index.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/chucknorrisjokes/index.html" target="_blank"><h3>Chuck Norris Jokes</h3></a>
+                            <p>Vanilla JS, AJAX and external API practice</p>
+                        </div>
+                        <ul>
+                            <li>Enter number of jokes (only positive numbers)</li>
+                            <li>App gets random jokes from <a class="text_link" href="http://www.icndb.com/" target="_blank">external database</a></li>
+                            <li>And shows specified number of random jokes</li>
+                        </ul>
+                        <a href="js-projects/chucknorrisjokes/index.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/tasks/app.html" target="_blank"><h3>Tasks Tracking</h3></a>
+                            <p>Add, delete, filter through tasks</p>
+                        </div>
+                        <ul>
+                            <li>ES6</li>
+                            <li>Error handling</li>
+                            <li>Materialize CSS as UI framework</li>
+                        </ul>
+                        <a href="js-projects/tasks/app.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/loan_calculator/index.html" target="_blank"><h3>Loan Calculator</h3></a>
+                            <p>Simple calculator using Vanilla JS</p>
+                        </div>
+                        <ul>
+                            <li>ES6</li>
+                            <li>Error handling and input validation</li>
+                            <li>Bootstrap UI Framework</li>
+                        </ul>
+                        <a href="js-projects/loan_calculator/index.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/drum_kit_js01/index.html" target="_blank"><h3>Drum Kit</h3></a>
+                            <p>Hit the key and enjoy its sound!</p>
+                        </div>
+                        <ul>
+                            <li>ES6</li>
+                            <li>Plays sounds on key press</li>
+                            <li>Adds nice button animation</li>
+                        </ul>
+                        <a href="js-projects/drum_kit_js01/index.html" target="_blank" class="links">View</a>
+                    </div>
+                </div>
+            </div> <!-- .javascript -->
 
             <div class="project_intro" data-type="magento">
                 <figure class="magento">
@@ -70,87 +210,6 @@
                     </div>
                 </article>
             </div>
-
-            <div class="project_intro" data-type="javascript">
-                <h2>Various Mini JS Projects</h2>
-                <div class="js-project-wrapper">
-                    <div>
-                        <div class="js-title">
-                            <img src="images/js-icon.png" alt="Js icon">
-                            <a href="js-projects/add_book/index.html" target="_blank"><h3>Book List</h3></a>
-                            <p>Add and delete a book using simple UI</p>
-                        </div>
-                        <ul>
-                            <li>OOP</li>
-                            <li>ES5 (ES6 version see in <a class="text_link" href="https://github.com/akarlovskaya/JS_30/blob/master/add_book/app-es6.js" target="_blank">GitHub repository</a>)</li>
-                            <li>Validation and Alerts</li>
-                            <li>Sceleton UI Framework</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="js-title">
-                            <img src="images/js-icon.png" alt="Js icon">
-                            <a href="js-projects/calories-tracker-js/index.html" target="_blank"><h3>Calories Tracker</h3></a>
-                            <p>Vanilla JS and Module Pattern</p>
-                        </div>
-
-                        <ul>
-                            <li>ES6 syntax</li>
-                            <li>App has three module controllers: Main App Controller, Item controller, UI controller</li>
-                            <li>Materialize CSS as UI framework (based on Material Design)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="js-title">
-                            <img src="images/js-icon.png" alt="Js icon">
-                            <a href="js-projects/chucknorrisjokes/index.html" target="_blank"><h3>Chuck Norris Jokes</h3></a>
-                            <p>Vanilla JS, AJAX and external API practice</p>
-                        </div>
-                        <ul>
-                            <li>App allows to enter number of jokes (only positive numbers)</li>
-                            <li>App gets random jokes from <a class="text_link" href="http://www.icndb.com/" target="_blank">external database</a></li>
-                            <li>And shows specified number of random jokes</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="js-title">
-                            <img src="images/js-icon.png" alt="Js icon">
-                            <a href="js-projects/tasks/app.html" target="_blank"><h3>Tasks Tracking</h3></a>
-                            <p>Add, delete, filter through tasks</p>
-                        </div>
-                        <ul>
-                            <li>ES6</li>
-                            <li>Error handling</li>
-                            <li>Materialize CSS as UI framework</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="js-title">
-                            <img src="images/js-icon.png" alt="Js icon">
-                            <a href="js-projects/loan_calculator/index.html" target="_blank"><h3>Loan Calculator</h3></a>
-                            <p>Simple calculator using Vanilla JS</p>
-                        </div>
-                        <ul>
-                            <li>ES6</li>
-                            <li>Error handling and input validation</li>
-                            <li>Bootstrap UI Framework</li>
-                        </ul>
-
-                    </div>
-                    <div>
-                        <div class="js-title">
-                            <img src="images/js-icon.png" alt="Js icon">
-                            <a href="js-projects/drum_kit_js01/index.html" target="_blank"><h3>Drum Kit</h3></a>
-                            <p>Hit the key and enjoy its sound!</p>
-                        </div>
-                        <ul>
-                            <li>ES6</li>
-                            <li>Plays sounds on key press</li>
-                            <li>Adds nice button animation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- .javascript -->
 
             <div class="project_intro" data-type="wordpress">
                 <figure>
