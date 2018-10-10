@@ -1,7 +1,6 @@
 /* -------------------------------
  general style
  ---------------------------------*/
-
 html {
     height: 100%;
     box-sizing: border-box;
@@ -45,7 +44,6 @@ a:hover, a:focus {
 }
 
 /* a11y style */
-
 .screen-reader-text {
     border: 0;
     clip: rect(0 0 0 0);
@@ -77,7 +75,6 @@ a:hover, a:focus {
 }
 
 /* navigation */
-
 header {
     background-color: #e5e3de;
 }
@@ -122,9 +119,7 @@ li a {
 /* -----------------------------
 index page
 ------------------------------ */
-
 /* svg style */
-
 .st0 {
     fill: none;
     stroke: #000000;
@@ -189,7 +184,6 @@ index page
 }
 
 /* end svg style*/
-
 .portfolio_word {
     margin-top: 70px;
 }
@@ -211,9 +205,7 @@ index page
 /* -----------------------------
 works page
 ------------------------------ */
-
 /* sorting nav style */
-
 .wrapper_projects nav {
     text-align: center;
     max-width: 900px;
@@ -255,7 +247,6 @@ works page
 }
 
 /* projects sections */
-
 .wrapper_projects h1 {
     text-transform: uppercase;
     text-align: center;
@@ -329,7 +320,6 @@ dd {
 }
 
 /* JavaScript section */
-
 div[data-type="javascript"], div[data-type="reactjs"] {
     display: block;
 }
@@ -417,10 +407,6 @@ div[data-type="reactjs"] img {
     margin: 12px 30px 20px;
 }
 
-div[data-type="reactjs"] .js-project-wrapper div:not(:last-child) ul {
-    min-height: 208px;
-}
-
 div[data-type="javascript"] .js-project-wrapper ul {
     min-height: 113px;
     margin-bottom: 0;
@@ -437,7 +423,6 @@ div[data-type="javascript"] .js-project-wrapper ul {
 }
 
 /* square links View Live */
-
 .links {
     text-transform: uppercase;
     text-decoration: none;
@@ -522,7 +507,6 @@ footer {
 }
 
 /* back to top arrow style */
-
 #back-top {
     position: fixed;
     bottom: 30px;
@@ -549,7 +533,6 @@ footer {
 }
 
 /* arrow icon (span tag) */
-
 #back-top span {
     width: 50px;
     height: 50px;
@@ -573,7 +556,6 @@ footer {
 /* -----------------------------
 about page
 ------------------------------ */
-
 .about_photo img {
     max-width: 70%;
     height: auto;
@@ -633,7 +615,6 @@ about page
 /* -----------------------------
 single project page
 ------------------------------ */
-
 .flex_container {
     display: -webkit-flex;
     display: flex;
@@ -687,7 +668,6 @@ single project page
 /* -----------------------------
 404 page
 ------------------------------ */
-
 .origami_404 {
     width: 50%;
     position: absolute;
@@ -698,26 +678,31 @@ single project page
 /* -----------------------------
 media queries
 ------------------------------ */
-
 @media only screen and (min-width: 580px) {
+
     /* -----------------------------
 index page
 ------------------------------ */
     .svg_wrapper {
         padding-top: 20%;
     }
+
     .portfolio_word {
         font-size: 2.3em;
     }
+
     .portfolio_word p {
         line-height: 0;
     }
+
     .hello_links ul {
         margin-top: 0;
     }
+
     .main_partiendo {
         margin: 0 50px 50px;
     }
+
     /* -----------------------------
 	works page
 	------------------------------ */
@@ -726,6 +711,7 @@ index page
         letter-spacing: 1px;
         text-decoration: none;
     }
+
     /* style for email hover image effect */
     .email {
         max-width: none;
@@ -734,12 +720,11 @@ index page
 }
 
 /*end min-width: 580px*/
-
 /* *{
 	border: 1px solid black;
 }*/
-
 @media only screen and (min-width: 870px) {
+
     /* navigation */
     .inner-nav {
         display: -webkit-flex;
@@ -750,14 +735,17 @@ index page
         justify-content: flex-end;
         height: 70px;
     }
+
     .inner-nav h1 {
         margin: 0;
         line-height: 70px;
     }
+
     .inner-nav nav {
         flex-grow: 2;
         -webkit-flex-grow: 2;
     }
+
     .inner-nav nav ul {
         display: -webkit-flex;
         display: flex;
@@ -765,35 +753,43 @@ index page
         justify-content: flex-end;
         margin: 0;
     }
+
     .inner-nav li:first-child {
         margin-right: 5%;
     }
+
     .inner-nav nav li a {
         line-height: 70px;
     }
+
     .inner-nav {
         width: 80%;
         max-width: 1200px;
     }
+
     body {
         border-left: 30px solid #222;
         border-right: 30px solid #222;
         border-bottom: 30px solid #222;
     }
+
     /* -----------------------------
 index page
 ------------------------------ */
     .portfolio_word p {
         font-size: 1.3em;
     }
+
     .hello_links ul {
         margin-top: 47px;
     }
+
     #content {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
     }
+
     .project_intro {
         display: -webkit-flex;
         display: flex;
@@ -801,6 +797,7 @@ index page
         padding: 0;
         background: none;
     }
+
     /* -----------------------------
 works page
 ------------------------------ */
@@ -816,42 +813,51 @@ works page
         position: absolute;
         color: #fa3939;
     }
+
     .hover_sign p {
         line-height: 1.2;
         text-transform: uppercase;
     }
+
     figure {
         -webkit-flex: 2;
         flex: 1;
     }
+
     article {
         -webkit-flex: 2;
         flex: 1;
     }
+
     article {
         padding: 0;
     }
+
     /* back to top arrow style */
     #back-top {
         position: fixed;
         bottom: 30px;
         right: 60px;
     }
+
     .magento img {
         max-width: 200px;
         /* margin-left: 210px; */
     }
+
     @media only screen and (min-width: 1200px) {
         .magento img {
             margin-left: 210px;
         }
     }
+
     .js-project-wrapper>div {
         width: 45%;
         margin: 20px;
         justify-content: space-between;
         padding-bottom: 20px;
     }
+
     /* -----------------------------
 about page
 ------------------------------ */
@@ -862,26 +868,32 @@ about page
         display: -webkit-flex;
         display: flex;
     }
+
     .about_text {
         margin-left: 10%;
         margin-right: 8%;
         max-width: 800px;
     }
+
     .about_text p {
         line-height: 1.6;
         font-size: 1.1em;
     }
+
     .about_text h1 {
         margin: 0 0 30px;
         text-align: left;
     }
+
     .about_photo img {
         max-width: 100%;
         margin-top: 0;
     }
+
     .about_photo {
         margin-top: 145px;
     }
+
     /* -----------------------------
 single project page
 ------------------------------ */
@@ -893,18 +905,22 @@ single project page
         height: 400px;
         background: url(../images/lightpaperfibers.png) repeat;
     }
+
     .intro_partiendo h1 {
         padding: 5% 0 3%;
         margin: 0;
     }
+
     .intro_partiendo div {
         width: 65%;
         margin: 0 auto;
     }
+
     .wrapper_project {
         width: 70%;
         margin: 10% auto;
     }
+
     .flex_container {
         -webkit-flex-direction: row;
         flex-direction: row;
@@ -912,29 +928,36 @@ single project page
         justify-content: space-around;
         margin: 5% auto;
     }
+
     .flex_container div {
         width: 600px;
         margin: 1%;
     }
+
     .flex_container img {
         width: 100%;
         height: auto;
     }
+
     .gallery a {
         padding: 0;
     }
+
     .text {
         margin: 5% 0 10%;
     }
+
     .viewLive_partiendo {
         margin: 0 auto;
         width: 500px;
     }
+
     .partiendo_live {
         -webkit-flex-direction: row;
         flex-direction: row;
         width: 350px;
     }
+
     /* -----------------------------
 404 page
 ------------------------------ */
