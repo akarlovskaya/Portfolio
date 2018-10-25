@@ -1,5 +1,7 @@
 // Back to Top arrow
 $(document).ready(function(){
+    const currentYear = (new Date()).getFullYear();
+    const footerEl = $('#currentYear').text(currentYear);
 
     // baguettebox gallery
     baguetteBox.run('.gallery');
